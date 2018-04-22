@@ -6,7 +6,12 @@
       "value": "GEN-USER"
     },
     "adminPassword": {
-      "value": "GEN-PASSWORD"
+      "reference": {
+        "keyVault": {
+          "id": "/subscriptions/73def91a-c34e-4947-8f4c-735b9b50e043/resourceGroups/Azure-Services/providers/Microsoft.KeyVault/vaults/Azure-keys"
+        },
+        "secretName": "VMpassword"
+      }
     },
     "dnsLabelPrefix": {
       "value": "GEN-UNIQUE"
